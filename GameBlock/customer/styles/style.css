@@ -1,0 +1,592 @@
+/*
+Template Name     : GameBlock
+Author Name       : Francois Cloete
+Author Email      : Francois@bookwise.co.za
+Theme URL         : localhost/GameBlock
+Theme Ver         : 1.1
+*/
+
+
+/* General Styles */
+
+
+body{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+.btn-primary{
+    background: #007a99 !important;
+    border-color: #007a99 !important;
+    transition: .5s;
+}
+.btn-primary:hover{
+    background: #00a3cc !important;
+}
+
+
+/* User Name Styles */
+
+
+#u_name{
+    padding: 4px 0;
+    text-align: center;
+}
+#u_name .offer{
+    color: #fff;
+}
+#u_name .offer .btn{
+    text-transform: uppercase;
+}
+
+
+/* User Name Styles Ends */
+
+
+/* Top Styles */
+
+#top{
+    background: #00a3cc;
+    padding: 8px 0;
+}
+#top .offer{
+    color: #ffffff;
+}
+#top .offer .btn{
+    text-transform: uppercase;
+}
+@media(max-width: 991px){
+    #top .offer{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 991px){
+    #top{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+#top a{
+    color: #ffffff;
+}
+#top ul.menu{
+    padding-top: 5px;
+    margin: 0px;
+    text-align: right;
+    font-size: 12px;
+    list-style: none;
+}
+@media(max-width: 991px){
+    #top ul.menu{
+        text-align: center;
+    }
+}
+#top ul.menu > li{
+    display: inline-block;
+}
+#top ul.menu > li a{
+    color: #eeeeee;
+}
+#top ul.menu > li + li:before{
+    content: "|\00a0";
+    color: #f7f7f7;
+    padding: 0px 5px;
+}
+
+
+/* Top Styles Ends */
+
+
+/* Header Styles */
+
+
+.navbar{
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+}
+.navbar-collapse .right{
+    float: right;
+}
+.navbar-brand{
+    float: left;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 70px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus{
+    text-decoration: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: #007a99;
+    background: none;
+}
+.navbar ul.nav > li > a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar ul.nav > li > a:hover{
+    color: #007a99;
+}
+.padding-nav{
+    padding-top: 10px;
+}
+.btn-primary{
+    color: rgb(255, 255, 255);
+    background: rgb(79, 191, 168);
+    border-color: rgb(65, 179, 156);
+}
+#search .navbar-form{
+    float: right;
+}
+#search{
+    clear: both;
+    border-top: solid 1px #9adacd;
+    text-align: right;
+}
+#search .navbar-form .input-group{
+    display: table;
+}
+#search .navbar-form .input-group .form-control{
+    width: 100%;
+}
+
+
+/* Header Styles Ends */
+
+
+/* Slider styles */
+
+
+#slider{
+    margin-bottom: 40px;
+}
+
+
+/* Slider styles Ends */
+
+
+/* Advantages Styles */
+
+
+#advantages{
+    
+}
+.box{
+    background: #ffffff;
+    margin: 0 0 30px;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+}
+#advantages .box .icon{
+    position: absolute;
+    font-size: 30px;
+    width: 100%;
+    text-align: right;
+    top: 7px;
+    left: -45px;
+    transform: translateY(50%, 50%);
+    height: 100%;
+    float: left;
+    color: #00b8e6;
+    box-sizing: border-box;
+    z-index: 1;
+}
+#advantages .box h3{
+    position: relative;
+    margin: 0 0 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 2;
+}
+#advantages .box h3 a{
+    color: #00a3cc;
+}
+#advantages .box h3 a:hover{
+    text-decoration: none;
+}
+#advantages .box p{
+    position: relative;
+    text-align: justify;
+    z-index: 2;
+    color: #555555;
+}
+
+
+/* Advantages Styles Ends */
+
+
+/* Latest Product Styling */
+
+
+#hot h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #007a99;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Latest Product Ends */
+
+
+/* Product Styling */
+
+
+#content{
+    padding: 20px;
+}
+.single{
+    width: 290px;
+}
+@media(max-width:768px){
+    .single{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+#content .product{
+    background: #ffffff;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+#content .product .text{
+    padding: 10px 10px 0;
+}
+#content .product .text p.price{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+#content .product .text .button{
+    text-align: center;
+    clear: both;
+}
+#content .product .text .button .btn{
+    margin-bottom: 10px;
+}
+#content .product .text .button .btn-primary{
+    background: #007a99;
+    border-color: #007a99;
+    transition: .5s;
+}
+#content .product .text .button .btn-primary:hover{
+    background: #00a3cc;
+}
+#content .product .text h3{
+    text-align: center;
+    font-size: 20px;
+}
+#content .product .text h3 a{
+    color: rbg(85, 85, 85);
+}
+
+
+/* Product Styling Ends */
+
+
+/* Memo Styles Begins */
+
+
+.memo{
+    background: url(../images/coupons.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    min-height: 470px;
+    margin: 50px 0;
+    padding-top: 110px;
+}
+.memo-gd h3{
+    color: #0099ff;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    margin: 135px 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.memo-gd span{
+    background: #0099ff;
+    padding: 25px 27px;
+    border-radius: 100%;
+    color: #F3F3F3;
+    font-size: 24px;
+}
+.memo-gd h4{
+    color: #FFFFFF;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 40px 0 20px;
+}
+.memo-gd p{
+    text-align: center;
+    color: #BBB;
+    font-size: 16px;
+    line-height: 2em;
+}
+.alt{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+/* Memo Styles Ends */
+
+
+/* Partner Styling */
+
+
+#partner{
+    
+}
+#partner img{
+    width: 130px;
+    height: 190px;
+}
+#partner h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+
+/* Partner Styling Ends */
+
+
+/* BreadCrumb Styling */
+
+.breadcrumb{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+}
+.breadcrumb > li + li:before{
+    content: ">\00a0";
+    color: #cccccc;
+}
+@media(max-width:991px){
+    .breadcrumb{
+        padding: 8px 0px;
+        text-align: center;
+    }
+}
+
+
+/* BreadCrumb Styling Ends */
+
+
+/* Products and Categories Styling */
+
+#content .panel.sidebar-menu{
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+#content .panel.sidebar-menu ul.nav.category-menu{
+    margin-bottom: 20px;
+}
+#content .panel.sidebar-menu ul.nav.category-menu li a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#content .panel.sidebar-menu h3{
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+
+/* Products and Categories Styling Ends */
+
+
+/* Shop Product Styling */
+
+
+@media(max-width: 768px){
+    .center-responsive{
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+@media(max-width: 550px){
+    .center-responsive{
+        width: 95%;
+        margin: 0px auto;
+    }
+}
+
+
+/* Shop Product Styling Ends */
+
+
+/* Details.php Styling */
+
+
+#content #productMain{
+    margin-bottom: 30px;
+}
+#content #productMain .price{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+#content #mainImage{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .7);
+}
+#content #thumbs a{
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    border: 2px solid transparent;
+}
+#content .b_mar{
+    margin-bottom: 25px;
+}
+
+
+/* Details.php Styling Ends */
+
+
+/* Cart.php Styling */
+
+
+#content #cart .table tbody tr td{
+    vertical-align: middle;
+}
+#content #cart .table tbody tr td img{
+    width: 50px;
+}
+#content #cart .table tbody tr td input{
+    width: 40px;
+    text-align: right;
+}
+#content #cart .table tfoot{
+    font-size: 18px;
+}
+.box .box-footer{
+    background-color: #f7f7f7;
+    margin: 30px -20px 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+.box .box-footer:before,
+.box .box-footer:after{
+    content: "";
+    display: table;
+}
+.box .box-footer:after{
+    clear: both;
+}
+.box .box-header{
+    background-color: #f7f7f7;
+    margin: -20px -20px -20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+#content #order-summary table{
+    margin-top: 20px;
+}
+#content #order-summary table td{
+    color: #999999;
+}
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th{
+    font-size: 18px;
+    color: #555555;
+    font-weight: 700;
+}
+
+
+/* Cart.php styling Ends */
+
+
+/* For Mozilla firefox Only */
+@-moz-document url-prefix(){
+    .form-height-custom{
+        height: auto;
+    }
+}
+/* For Mozilla firefox Only Ends */
+
+
+/* Footer Styling */
+
+
+#footer{
+    background: #222222;
+    padding: 20px 0;
+}
+#footer p, h4{
+    color: #ccc;
+}
+#footer a{
+    text-decoration: none;
+    color: #999999;
+}
+#footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+#footer ul a{
+    color: #999999;
+    padding: 0px 0;
+    text-decoration: none;
+}
+#footer ul a:hover{
+    color: #007a99;
+}
+#footer ul li{
+    padding: 0 0 10px 0;
+}
+#footer .social{
+    text-align: left;
+}
+#footer .social a{
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #555555;
+    text-decoration: none;
+}
+#footer .social a:hover{
+    color: #ffffff;
+    background: #007a99;
+}
+
+
+/* Footer Styles Ends */
+
+
+/* Copyright Styles */
+
+
+#copyright{
+    background: #fff;
+    color: #222;
+    padding: 12px 0px;
+    font-size: 12px;
+}
+#copyright p{
+    margin: 0px;
+    color: #000;
+}
+
+
+/* Copyright Styles Ends */
